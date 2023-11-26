@@ -52,3 +52,20 @@ function showQuestion() {
         optionsContainer.appendChild(button);
     });
 }
+
+// Function to check the selected answer
+function checkAnswer(selectedOption) {
+    const currentQ = questions[currentQuestion];
+
+    if (selectedOption === currentQ.correctAnswer) {
+        score++;
+    }
+
+    currentQuestion++;
+
+    if (currentQuestion < questions.length) {
+        showQuestion();
+    } else {
+        showResult();
+    }
+}
