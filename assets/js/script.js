@@ -81,3 +81,17 @@ function showResult() {
 
     scoreValue.textContent = score;
 }
+
+// Function to move to the next question
+function nextQuestion() {
+    const quizContainer = document.getElementById("quiz-container");
+    const resultContainer = document.getElementById("result-container");
+
+    if (currentQuestion < questions.length) {
+        showQuestion();
+    } else {
+        showResult();
+    }
+}
+// Start the quiz when the page is loaded
+document.addEventListener("DOMContentLoaded", startQuiz);
