@@ -36,8 +36,17 @@ body {
 }
 
 #quiz-container {
+    position: relative;
     padding: 20px;
     text-align: center;
+}
+
+#page-number {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    margin: 10px;
+    font-size: 14px;
 }
 
 .options-container {

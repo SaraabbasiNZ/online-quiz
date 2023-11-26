@@ -63,6 +63,8 @@ function hideRestartButton() {
 function showQuestion() {
     const questionElement = document.getElementById("question");
     const optionsContainer = document.getElementById("options");
+    const currentPageElement = document.getElementById("current-page");
+    const totalPageElement = document.getElementById("total-pages");
     const currentQ = questions[currentQuestion];
 
     // Added numbering
@@ -75,6 +77,9 @@ function showQuestion() {
         button.onclick = () => checkAnswer(option);
         optionsContainer.appendChild(button);
     });
+    // Update page number
+    currentPageElement.textContent = currentQuestion + 1;
+    totalPageElement.textContent = questions.length;
 }
 
 // Function to check the selected answer
@@ -127,3 +132,4 @@ function nextQuestion() {
 
 // Start the quiz when the page is loaded
 document.addEventListener("DOMContentLoaded", startQuiz);
+
