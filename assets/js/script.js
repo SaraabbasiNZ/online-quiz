@@ -23,9 +23,7 @@ const questions = [
         question: "Which of the following methods can be used to display data in some form using Javascript?",
         options: ["A. document.write()", "B. console.log()", "C. windows.alert()", "D. All of them"],
         correctAnswer: "D. All of them"
-    }
-
-
+  }
 ];
 
 let currentQuestion = 0;
@@ -33,7 +31,32 @@ let score = 0;
 
 // Function to start the quiz
 function startQuiz() {
+    hideRestartButton();// Initially hide the restart button
     showQuestion();
+}
+
+// Function to restart the quiz
+function restartQuiz() {
+    const quizContainer = document.getElementById("quiz-container");
+    const resultContainer = document.getElementById("result-container");
+    const restartBtn = document.getElementById("restart-btn");
+
+    quizContainer.style.display = "block";
+    resultContainer.style.display = "none";
+
+    // Reset variables
+    currentQuestion = 0;
+    score = 0;
+
+    // Start the quiz again
+    showQuestion();
+    hideRestartButton();
+}
+
+// Function to hide the restart button
+function hideRestartButton() {
+    const restartBtn = document.getElementById("restart-btn");
+    restartBtn.style.display = "none";
 }
 
 // Function to display the current question and options
@@ -79,9 +102,11 @@ function showResult() {
 
     quizContainer.style.display = "none";
     resultContainer.style.display = "block";
-    restartBtn.style.display = "block"; // Show the restart button
-
     scoreValue.textContent = score;
+
+    // Always show the restart button at the end
+    restartBtn.style.display = "block";
+    restartBtn.onclick = () => restartQuiz(); // Assign the onclick event to restart the quiz
 }
 
 // Function to move to the next question
@@ -90,13 +115,12 @@ function nextQuestion() {
     const resultContainer = document.getElementById("result-container");
     const restartBtn = document.getElementById("restart-btn");
 
-    if (currentQuestion < questions.length - 1) {
-        currentQuestion++;
-        showQuestion();
+    if (currentQuestion < questions.length) {
+       showQuestion();
     } else {
-        showResult();
+     showResult();
     }
-
+    
     restartBtn.style.display = "none"; // Hide the restart button after moving to the next question
 }
 
