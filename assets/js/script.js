@@ -69,3 +69,15 @@ function checkAnswer(selectedOption) {
         showResult();
     }
 }
+
+// Function to show the final quiz result
+function showResult() {
+    const quizContainer = document.getElementById("quiz-container");
+    const resultContainer = document.getElementById("result-container");
+    const scoreValue = document.getElementById("score-value");
+
+    quizContainer.style.display = "none";
+    resultContainer.style.display = "block";
+
+    scoreValue.textContent = score;
+}
