@@ -42,7 +42,7 @@ function showQuestion() {
     const optionsContainer = document.getElementById("options");
     const currentQ = questions[currentQuestion];
 
-    questionElement.textContent = currentQ.question;
+    questionElement.textContent = `${currentQuestion + 1}. ${currentQ.question}`; // Added numbering
     optionsContainer.innerHTML = "";
 
     currentQ.options.forEach((option, index) => {
@@ -75,9 +75,11 @@ function showResult() {
     const quizContainer = document.getElementById("quiz-container");
     const resultContainer = document.getElementById("result-container");
     const scoreValue = document.getElementById("score-value");
+    const restartBtn = document.getElementById("restart-btn");
 
     quizContainer.style.display = "none";
     resultContainer.style.display = "block";
+    restartBtn.style.display = "block"; // Show the restart button
 
     scoreValue.textContent = score;
 }
@@ -86,12 +88,17 @@ function showResult() {
 function nextQuestion() {
     const quizContainer = document.getElementById("quiz-container");
     const resultContainer = document.getElementById("result-container");
+    const restartBtn = document.getElementById("restart-btn");
 
-    if (currentQuestion < questions.length) {
+    if (currentQuestion < questions.length - 1) {
+        currentQuestion++;
         showQuestion();
     } else {
         showResult();
     }
+
+    restartBtn.style.display = "none"; // Hide the restart button after moving to the next question
 }
+
 // Start the quiz when the page is loaded
 document.addEventListener("DOMContentLoaded", startQuiz);
