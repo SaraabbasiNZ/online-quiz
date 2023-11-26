@@ -4,30 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-Lmve0Ik5X5W2OX/Ekz3sF4Zt3jJAVg5iQDvbESrnfIbJOlx6U4d/ja4pSfB5SMjb" crossorigin="anonymous">
+
+    <!-- External stylesheet links for styling -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha384-Lmve0Ik5X5W2OX/Ekz3sF4Zt3jJAVg5iQDvbESrnfIbJOlx6U4d/ja4pSfB5SMjb" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+
     <link rel="stylesheet" href="assets/css/style.css">
+    
     <title>Online Quiz</title>
 </head>
 
 <body>
+    <!-- Main container for the entire page -->
     <div class="container">
+        <!-- Header section with the quiz title -->
         <div id="header">
             <h1>
+                <!-- Icon for styling (font-awesome) and quiz title -->
                 <i class="fas fa-code"></i> JavaScript Online Quiz
             </h1>
         </div>
+
+        <!-- Container for the quiz questions and options -->
         <div id="quiz-container">
             <h2 id="question">Question goes here</h2>
             <div id="options" class="options-container"></div>
-        <button id="next-btn" onclick="nextQuestion()">Next</button>
+
+            <!-- Button to navigate to the next question after selecting an answer -->
+            <button id="next-btn" onclick="nextQuestion()">Next</button>
         </div>
+
+        <!-- Container for displaying quiz results -->
         <div id="result-container" style="display: none;">
             <h2 id="result">Quiz Result</h2>
             <p id="score">Your score: <span id="score-value">0</span></p>
+
+            <!-- Button to restart the quiz -->
             <button id="restart-btn" onclick="restartQuiz()">Restart</button>
         </div>
     </div>
+
+    <!-- Script tag to link the JavaScript file -->
     <script src="assets/js/script.js"></script>
 </body>
 

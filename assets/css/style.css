@@ -14,9 +14,8 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     max-width: 600px;
-    /* Set maximum width */
+    /* Set maximum width to ensure responsiveness */
     width: 100%;
-    /* Ensure responsiveness */
 }
 
 #header {
@@ -45,6 +44,21 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.options-container button {
+    width: 100%;
+    text-align: left;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.options-container button:hover {
+    background-color: #45a049;
 }
 
 #options {

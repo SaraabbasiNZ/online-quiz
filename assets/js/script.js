@@ -1,6 +1,6 @@
 const questions = [
     {
-        question: "Javascript is an _______ language?",
+        question: "JavaScript is an _______ language?",
         options: ["A. Object-Oriented", "B. Object-Based", "C. Procedural", "D. None of them"],
         correctAnswer: "A. Object-Oriented"
     },
@@ -10,17 +10,17 @@ const questions = [
         correctAnswer: "C. Both A and B"
     },
     {
-        question: "Which of the following methods is used to access HTML elements using Javascript?",
+        question: "Which of the following methods is used to access HTML elements using JavaScript?",
         options: ["A. getElementById()", "B. getElementByClassName()", "C. Both A and B", "D. None of them"],
         correctAnswer: "C. Both A and B"
     },
     {
-        question: "Upon encountering empty statements, what does the Javascript Interpreter do?",
+        question: "Upon encountering empty statements, what does the JavaScript Interpreter do?",
         options: ["A. Throw an error", "B. Ignores the statements", "C. Gives a warning", "D. None of them"],
         correctAnswer: "B. Ignores the statements"
     },
     {
-        question: "Which of the following methods can be used to display data in some form using Javascript?",
+        question: "Which of the following methods can be used to display data in some form using JavaScript?",
         options: ["A. document.write()", "B. console.log()", "C. windows.alert()", "D. All of them"],
         correctAnswer: "D. All of them"
   }
@@ -65,7 +65,8 @@ function showQuestion() {
     const optionsContainer = document.getElementById("options");
     const currentQ = questions[currentQuestion];
 
-    questionElement.textContent = `${currentQuestion + 1}. ${currentQ.question}`; // Added numbering
+    // Added numbering
+    questionElement.textContent = `${currentQuestion + 1}. ${currentQ.question}`; 
     optionsContainer.innerHTML = "";
 
     currentQ.options.forEach((option, index) => {
@@ -120,7 +121,7 @@ function nextQuestion() {
     } else {
      showResult();
     }
-    
+
     restartBtn.style.display = "none"; // Hide the restart button after moving to the next question
 }
 
