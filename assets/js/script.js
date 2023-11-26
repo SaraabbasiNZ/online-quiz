@@ -25,5 +25,30 @@ const questions = [
         correctAnswer: "All of them"
     }
 
-    
+
 ];
+
+let currentQuestion = 0;
+let score = 0;
+
+// Function to start the quiz
+function startQuiz() {
+    showQuestion();
+}
+
+// Function to display the current question and options
+function showQuestion() {
+    const questionElement = document.getElementById("question");
+    const optionsContainer = document.getElementById("options");
+    const currentQ = questions[currentQuestion];
+
+    questionElement.textContent = currentQ.question;
+    optionsContainer.innerHTML = "";
+
+    currentQ.options.forEach((option, index) => {
+        const button = document.createElement("button");
+        button.textContent = option;
+        button.onclick = () => checkAnswer(option);
+        optionsContainer.appendChild(button);
+    });
+}
