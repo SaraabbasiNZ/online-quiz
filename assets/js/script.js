@@ -23,7 +23,82 @@ const questions = [
         question: "Which of the following methods can be used to display data in some form using JavaScript?",
         options: ["A. document.write()", "B. console.log()", "C. windows.alert()", "D. All of them"],
         correctAnswer: "D. All of them"
-  }
+  },
+    {
+        question: "What does CSS stand for?",
+        options: ["A. Counter Strike: Source", "B. Corrective Style Sheet", "C. Computer Style Sheet", "D. Cascading Style Sheet"],
+        correctAnswer: "D. Cascading Style Sheet"
+    },
+    {
+        question: "Which HTML tag is used to define an unordered list?",
+        options: ["A. <ol>", "B. <li>", "C. <ul>", "D. <list>"],
+        correctAnswer: "C. <ul>"
+    },
+    {
+        question: "What does the 'src' attribute in the <img> tag specify?",
+        options: ["A. Source", "B. Style", "C. Syntax", "D. Image source"],
+        correctAnswer: "D. Image source"
+    },
+    {
+        question: "In JavaScript, what is a block of code that performs a specific task?",
+        options: ["A. Function", "B. Variable", "C. Array", "D. Loop"],
+        correctAnswer: "A. Function"
+    },
+    {
+        question: "Which of the following is not a JavaScript data type?",
+        options: ["A. String", "B. Boolean", "C. Float", "D. Integer"],
+        correctAnswer: "C. Float"
+    },
+    {
+        question: "What is the purpose of the 'else' statement in JavaScript?",
+        options: ["A. To execute code if a condition is true", "B. To define a loop", "C. To execute code if a condition is false", "D. To declare a variable"],
+        correctAnswer: "C. To execute code if a condition is false"
+    },
+    {
+        question: "Which event is triggered when a user clicks on an HTML element?",
+        options: ["A. onmouseover", "B. onblur", "C. onclick", "D. onchange"],
+        correctAnswer: "C. onclick"
+    },
+    {
+        question: "How do you declare a variable in JavaScript?",
+        options: ["A. v variableName", "B. var variableName", "C. variableName = value", "D. declare variableName"],
+        correctAnswer: "B. var variableName"
+    },
+    {
+        question: "What does the '++' operator do in JavaScript?",
+        options: ["A. Add one to a variable", "B. Subtract one from a variable", "C. Multiply a variable by two", "D. Divide a variable by two"],
+        correctAnswer: "A. Add one to a variable"
+    },
+    {
+        question: "Which built-in method removes the last element from an array and returns that element?",
+        options: ["A. pop()", "B. push()", "C. join()", "D. slice()"],
+        correctAnswer: "A. pop()"
+    },
+    {
+        question: "What is the purpose of the 'localStorage' object in web development?",
+        options: ["A. To store data on the server", "B. To store data locally in the user's browser", "C. To create animations", "D. To validate form inputs"],
+        correctAnswer: "B. To store data locally in the user's browser"
+    },
+    {
+        question: "Which CSS property is used to change the text color of an element?",
+        options: ["A. text-color", "B. color", "C. font-color", "D. text-style"],
+        correctAnswer: "B. color"
+    },
+    {
+        question: "What does the acronym API stand for?",
+        options: ["A. Application Programming Interface", "B. Advanced Programming Interface", "C. Application Program Integration", "D. Advanced Program Interaction"],
+        correctAnswer: "A. Application Programming Interface"
+    },
+    {
+        question: "In HTML, what does the <a> tag stand for?",
+        options: ["A. Article", "B. Anchor", "C. Attribute", "D. Abbreviation"],
+        correctAnswer: "B. Anchor"
+    },
+    {
+        question: "Which of the following is not a valid color in CSS?",
+        options: ["A. #FF0000", "B. rgb(255, 255, 255)", "C. green", "D. hsl(120, 100%, 50%)"],
+        correctAnswer: "C. green"
+    }
 ];
 
 let currentQuestion = 0;
@@ -96,7 +171,7 @@ function checkAnswer(selectedOption, event) {
     currentQuestion++;
 
     if (currentQuestion < questions.length) {
-        setTimeout(() => { showQuestion(); }, 2000);
+        setTimeout(() => { showQuestion(); }, 1000);
     } else {
         showResult();
     }
@@ -115,7 +190,7 @@ function showResult() {
     scoreValue.textContent = score;
 
     // Display message based on score
-    if (score >= 3) {
+    if (score >= 15) {
         messageElement.textContent = "Great job! You did well!";
     } else {
         messageElement.textContent = "You can do better. Keep practicing!";
