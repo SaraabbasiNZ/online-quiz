@@ -105,10 +105,18 @@ function showResult() {
     const resultContainer = document.getElementById("result-container");
     const scoreValue = document.getElementById("score-value");
     const restartBtn = document.getElementById("restart-btn");
+    const messageElement = document.getElementById("message");
 
     quizContainer.style.display = "none";
     resultContainer.style.display = "block";
     scoreValue.textContent = score;
+
+    // Display message based on score
+    if (score >= 3) {
+        messageElement.textContent = "Great job! You did well!";
+    } else {
+        messageElement.textContent = "You can do better. Keep practicing!";
+    }
 
     // Always show the restart button at the end
     restartBtn.style.display = "block";
