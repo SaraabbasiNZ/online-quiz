@@ -100,3 +100,7 @@ button:hover {
     padding: 20px;
     text-align: center;
 }
+
+.red {
+    background-color: red !important;
+}

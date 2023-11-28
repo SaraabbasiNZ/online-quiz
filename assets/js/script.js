@@ -39,7 +39,7 @@ function startQuiz() {
 function restartQuiz() {
     const quizContainer = document.getElementById("quiz-container");
     const resultContainer = document.getElementById("result-container");
-    const restartBtn = document.getElementById("restart-btn");
+    //const restartBtn = document.getElementById("restart-btn");
 
     quizContainer.style.display = "block";
     resultContainer.style.display = "none";
@@ -74,7 +74,8 @@ function showQuestion() {
     currentQ.options.forEach((option, index) => {
         const button = document.createElement("button");
         button.textContent = option;
-        button.onclick = () => checkAnswer(option);
+        button.onclick = (event) => checkAnswer(option, event);
+        button.classList.remove('red');
         optionsContainer.appendChild(button);
     });
     // Update page number
@@ -83,17 +84,19 @@ function showQuestion() {
 }
 
 // Function to check the selected answer
-function checkAnswer(selectedOption) {
+function checkAnswer(selectedOption, event) {
     const currentQ = questions[currentQuestion];
 
     if (selectedOption === currentQ.correctAnswer) {
         score++;
+    } else {
+        event.target.classList.add('red');
     }
 
     currentQuestion++;
 
     if (currentQuestion < questions.length) {
-        showQuestion();
+        setTimeout(() => { showQuestion(); }, 2000);
     } else {
         showResult();
     }
@@ -125,7 +128,7 @@ function showResult() {
 
 // Function to move to the next question
 function nextQuestion() {
-    const quizContainer = document.getElementById("quiz-container");
+    //const quizContainer = document.getElementById("quiz-container");
     const resultContainer = document.getElementById("result-container");
     const restartBtn = document.getElementById("restart-btn");
 
@@ -138,6 +141,15 @@ function nextQuestion() {
     restartBtn.style.display = "none"; // Hide the restart button after moving to the next question
 }
 
+document.getElementById('next-btn').addEventListener('click', () => {
+    nextQuestion();
+});
+
+document.getElementById('restart-btn').addEventListener('click', () => {
+    restartQuiz();
+});
+
 // Start the quiz when the page is loaded
 document.addEventListener("DOMContentLoaded", startQuiz);
+
 
