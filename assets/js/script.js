@@ -112,7 +112,7 @@ function runTimer() {
     timer = setInterval(() => {
         seconds += 1;
         document.getElementById('timer').innerHTML = `${seconds} Seconds`;
-    }, 1000);
+    }, 1000)
 }
 
 // Function to start the quiz
@@ -123,6 +123,7 @@ function startQuiz() {
 
     hideRestartButton(); // Initially hide the restart button
     showQuestion();
+    runTimer();
 }
 
 // Function to restart the quiz

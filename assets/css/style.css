@@ -39,6 +39,10 @@ body {
     margin-right: 10px;
 }
 
+.guide-content {
+    text-align: left;
+}
+
 /* Additional styling for the quiz guide page */
 #guide-container {
     background-color: #4caf50;
