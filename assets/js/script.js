@@ -104,11 +104,22 @@ const questions = [
 let currentQuestion = 0;
 let score = 0;
 
+let timer = null;
+let seconds = 0;
+let buttonsLocked = false;
+
+function runTimer() {
+    timer = setInterval(() => {
+        seconds += 1;
+        document.getElementById('timer').innerHTML = `${seconds} Seconds`;
+    }, 1000);
+}
+
 // Function to start the quiz
 function startQuiz() {
     // Hide the quiz guide and display the quiz container
     document.getElementById("guide-container").style.display = "none";
-    document.getElementById("quiz-container").style.display = "block";
+    document.getElementById("quiz-wrapper").style.display = "block";
 
     hideRestartButton(); // Initially hide the restart button
     showQuestion();
@@ -126,10 +137,10 @@ function restartQuiz() {
     // Reset variables
     currentQuestion = 0;
     score = 0;
+    seconds = 0;
 
     // Start the quiz again
-    showQuestion();
-    hideRestartButton();
+    startQuiz();
 }
 
 // Function to hide the restart button
@@ -164,6 +175,11 @@ function showQuestion() {
 
 // Function to check the selected answer
 function checkAnswer(selectedOption, event) {
+    if (buttonsLocked === true) {
+        return false;
+    }
+    buttonsLocked = true;
+
     const currentQ = questions[currentQuestion];
 
     if (selectedOption === currentQ.correctAnswer) {
@@ -175,7 +191,7 @@ function checkAnswer(selectedOption, event) {
     currentQuestion++;
 
     if (currentQuestion < questions.length) {
-        setTimeout(() => { showQuestion(); }, 1000);
+        setTimeout(() => { showQuestion(); buttonsLocked = false; }, 1000);
     } else {
         showResult();
     }
@@ -188,6 +204,8 @@ function showResult() {
     const scoreValue = document.getElementById("score-value");
     const restartBtn = document.getElementById("restart-btn");
     const messageElement = document.getElementById("message");
+
+    clearInterval(timer);
 
     quizContainer.style.display = "none";
     resultContainer.style.display = "block";
@@ -202,12 +220,10 @@ function showResult() {
 
     // Always show the restart button at the end
     restartBtn.style.display = "block";
-    restartBtn.onclick = () => restartQuiz(); // Assign the onclick event to restart the quiz
 }
 
 // Function to move to the next question
 function nextQuestion() {
-    //const quizContainer = document.getElementById("quiz-container");
     const resultContainer = document.getElementById("result-container");
     const restartBtn = document.getElementById("restart-btn");
 
@@ -220,18 +236,9 @@ function nextQuestion() {
     restartBtn.style.display = "none"; // Hide the restart button after moving to the next question
 }
 
-document.getElementById('next-btn').addEventListener('click', () => {
-    nextQuestion();
-});
-
 document.getElementById('restart-btn').addEventListener('click', () => {
     restartQuiz();
 });
 
 // Added an event listener for the start button
 document.getElementById('start-btn').addEventListener('click', startQuiz);
-
-// Start the quiz when the page is loaded
-document.addEventListener("DOMContentLoaded", startQuiz);
-
-
