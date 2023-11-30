@@ -228,6 +228,9 @@ document.getElementById('restart-btn').addEventListener('click', () => {
     restartQuiz();
 });
 
+// Added an event listener for the start button
+document.getElementById('start-btn').addEventListener('click', startQuiz);
+
 // Start the quiz when the page is loaded
 document.addEventListener("DOMContentLoaded", startQuiz);
 
