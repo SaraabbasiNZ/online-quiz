@@ -17,7 +17,17 @@
 
 <body>
     <!-- Main container for the entire page -->
-    <div class="container">
+    <div class="container" id="guide-container">
+        <!-- Guide section with quiz instructions -->
+        <div id="guide">
+            <h1>Welcome to the JavaScript Online Quiz</h1>
+            <p>This quiz will test your knowledge of JavaScript. Read each question carefully and choose the correct answer. Good luck!</p>
+            <button id="start-btn" onclick="startQuiz()">Start Quiz</button>
+        </div>
+    </div>
+
+    <!-- Quiz container -->
+    <div class="container" id="quiz-container" style="display: none;">
         <!-- Header section with the quiz title -->
         <div id="header">
             <h1>

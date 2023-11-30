@@ -106,7 +106,11 @@ let score = 0;
 
 // Function to start the quiz
 function startQuiz() {
-    hideRestartButton();// Initially hide the restart button
+    // Hide the quiz guide and display the quiz container
+    document.getElementById("guide-container").style.display = "none";
+    document.getElementById("quiz-container").style.display = "block";
+
+    hideRestartButton(); // Initially hide the restart button
     showQuestion();
 }
 
