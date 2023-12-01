@@ -50,3 +50,12 @@ The site is a single page with 3 sections:
   - Welcome area and guide
   - Quiz selection area
   - Quiz complete and score
+
+### Desktop Wireframe
+Wireframes were produced using Balsamiq.
+<details>
+
+ <summary>Desktop Wireframe</summary>
+
+![Desktop Wireframe](assets/images/)
+ </details>
