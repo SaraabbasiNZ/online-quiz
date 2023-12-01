@@ -65,3 +65,36 @@ Wireframes were produced using Balsamiq.
 
 ![Mobile Wireframe](assets/images/mobile-wireframe.png)
  </details>
+
+
+## Feature
+
+### Quiz Guide
+- Begin your JavaScript quiz with a helpful guide offering clear instructions.
+- Understand the requirement to select a single answer per question for a streamlined experience.
+
+![Guide page](assets/images/guide-page.png)
+
+### Quiz Selection
+- Engage with 20 well-crafted questions designed to evaluate your JavaScript knowledge.
+- Experience a variety of question formats with multiple options, encouraging careful consideration.
+- Seamlessly transition between questions, ensuring a smooth and user-friendly quiz experience.
+- Focus on answering questions without disruptions, enhancing overall engagement.
+- Feel the thrill of a time challenge with a built-in timer tracking your quiz duration.
+- Test not just your knowledge but also your ability to respond swiftly.
+
+![Quiz page](assets/images/quiz-page.png)
+
+### Wrong Answer
+Receive immediate feedback on your responses, with incorrect answers visibly highlighted in red.
+
+![Wrong Answer](assets/images/wrong-answer.png)
+
+### Quiz Result 
+- Explore a dedicated results section providing an overview of your performance.
+- Receive a personalized message based on your score, offering encouragement or motivation.
+- Enjoy the flexibility of a restart option, allowing you to retake the quiz and enhance your score.
+- Turn the quiz into a learning journey, identifying areas for improvement and mastering JavaScript concepts.
+
+![Resut Page](assets/images/result-quiz.png)
+
