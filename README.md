@@ -42,7 +42,7 @@ The live link can be found here - [JavaScript Online Quiz](https://saraabbasinz.
 ### Color
 The color design for the JavaScript Online Quiz is carefully chosen to enhance the user experience. A neutral background (#f4f4f4) provides a clean canvas, while the main container and header use a white background (#fff) with vibrant green accents (#4caf50) for clarity and visual appeal. The use of green for buttons and highlights maintains a cohesive theme throughout the quiz, creating a sense of unity and guiding the user's interaction. The color scheme aims to be both aesthetically pleasing and functional, ensuring a seamless and enjoyable experience for participants.
 
-### Fonts
+### Font
 The chosen font for the JavaScript Online Quiz, 'Open Sans', contributes to a modern and clean visual style. This sans-serif typeface is utilized to provide clear and easily readable text throughout the quiz.
 
 ### Layout
@@ -67,7 +67,7 @@ Wireframes were produced using Balsamiq.
  </details>
 
 
-## Feature
+## Features
 
 ### Quiz Guide
 - Begin your JavaScript quiz with a helpful guide offering clear instructions.
