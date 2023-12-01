@@ -98,3 +98,26 @@ Receive immediate feedback on your responses, with incorrect answers visibly hig
 
 ![Resut Page](assets/images/result-quiz.png)
 
+### Features Left to Implement
+- Introduce user accounts to allow individuals to track their progress over multiple quiz sessions.
+- Provide users with the ability to customize quiz settings, such as adjusting difficulty levels or selecting specific topics.
+- Integrate social media features to enable users to share their quiz results and achievements.
+- Enhance the learning experience by incorporating detailed explanations for both correct and incorrect answers.
+- Implement a leaderboard functionality to foster friendly competition among quiz-takers.
+
+## Testing
+
+### Validator Testing
+
+- #### HTML
+  - No errors were returned when passing through the official W3C Markup Validator
+      - [W3C Validator Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsaraabbasinz.github.io%2Fonline-quiz%2F)
+
+- #### CSS
+  - No errors were found when passing through the official W3C CSS Validator
+    - [W3C CSS Validator Results](https://jigsaw.w3.org/css-validator/validator)
+
+- #### Javascript
+  - No errors or warnings were returned when passing through the the [JSHint Validator](https://jshint.com/)
+
+  ![JSHint Validator Results]()
