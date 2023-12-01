@@ -137,8 +137,8 @@ Desktop Lighthouse Score
 ### Button Testing
 - All buttons were tested manually to ensure the user is directed to the correct section of the website and functions run as intended.
 
-### Game Testing
-- The game was thoroughly tested by friends and family to ensure that everything worked as intended including the following:
+### Quiz Testing
+- The quiz was thoroughly tested by friends and family to ensure that everything worked as intended including the following:
   - We validate that each quiz question is accurately displayed, users can select only one answer per question, and feedback mechanisms function correctly.
   - We verify the smooth transition between quiz questions and the effectiveness of the restart button.
   - The timer is rigorously tested to accurately reflect the time spent on the quiz, ensuring precision and reliability.
@@ -151,3 +151,51 @@ Desktop Lighthouse Score
 - The website was viewed on a variety of devices such as Desktop, Laptop, iPhone 8, iPhoneX and iPad to ensure responsiveness on various screen sizes in both portrait and landscape mode. The website performed as intended. The responsive design was also checked using Chrome developer tools across multiple devices with structural integrity holding for the various sizes.
 - I also used the following website to test responsiveness:
   - [Responsinator](http://www.responsinator.com/?url=https%3A%2F%2Fsaraabbasinz.github.io%2Fonline-quiz%2F)
+
+### Fixed Bugs
+
+#### Fixed Timer Display Issue
+- Previously, the quiz timer was not updating in real-time, leading to inaccurate time tracking during the quiz. Users couldn't rely on the displayed timer to gauge how much time they had spent.
+- To resolve this, the JavaScript code responsible for updating the timer was revised. Now, the timer accurately reflects the elapsed time from the start of the quiz. The setInterval function is utilized to consistently update the timer display, providing users with an authentic representation of their quiz duration.
+
+#### Resolved Incorrect Scoring:
+- Users reported instances where their correct answers were not consistently contributing to their final quiz score. This inconsistency raised concerns about the accuracy of the quiz scoring system.
+- A comprehensive examination of the scoring logic was undertaken. It was discovered that a conditional statement was not effectively capturing and tallying all correct responses. The logic was revised to ensure that each correct answer consistently adds to the user's score. This adjustment guarantees a reliable and accurate reflection of the user's knowledge in the final quiz score.
+
+### Known Bugs
+
+There are no known bugs.
+
+## Technologies Used
+
+### Languages
+
+- JavaScript
+- HTML5
+- CSS3
+
+### Frameworks - Libraries - Programs Used
+- [Am I Responsive](http://ami.responsivedesign.is/) - Used to verify responsiveness of website on different devices.
+- [Responsinator](http://www.responsinator.com/) - Used to verify responsiveness of website on different devices.
+- [Balsamiq](https://balsamiq.com/) - Used to generate Wireframe images.
+- [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - Used for overall development and tweaking, including testing responsiveness and performance.
+- [Font Awesome](https://fontawesome.com/) - Used for icons in information bar.
+- [GitHub](https://github.com/) - Used for version control and hosting.
+- [Google Fonts](https://fonts.google.com/) - Used to import and alter fonts on the page.
+- [TinyPNG](https://tinypng.com/) - Used to compress images to reduce file size without a reduction in quality.
+- [W3C](https://www.w3.org/) - Used for HTML & CSS Validation.
+- [Coolors](https://coolors.co/) - Used to create colour palette.
+
+## Deployment
+
+The site was deployed using GitHub pages. The steps to deploy using GitHub pages are:
+
+1. Go to the repository on GitHub.com
+2. Select 'Settings' near the top of the page.
+3. Select 'Pages' from the menu bar on the left of the page.
+4. Under 'Source' select the 'Branch' dropdown menu and select the main branch.
+5. Once selected, click the 'Save'.
+6. Deployment should be confirmed by a message on a green background saying "Your site is published at" followed by the web address.
+
+The live link can be found here - [JavaScript Online Quiz](https://saraabbasinz.github.io/online-quiz/)
+
