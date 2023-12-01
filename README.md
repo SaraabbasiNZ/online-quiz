@@ -17,19 +17,36 @@ The live link can be found here - [JavaScript Online Quiz](https://saraabbasinz.
 ## User Stories
 
 - ### First Time User
-- As a first-time user, I want to understand the purpose of the website.
-- As a first-time user, I want to easily navigate through the quiz, understand the questions, and submit my answers effortlessly.
-- As a first-time user, once I finish the quiz, I want a summary of my performance and a clear indication that the quiz is complete.
+  - As a first-time user, I want to understand the purpose of the website.
+  - As a first-time user, I want to easily navigate through the quiz, understand the questions, and submit my answers effortlessly.
+  - As a first-time user, once I finish the quiz, I want a summary of my performance and a clear indication that the quiz is complete.
 
 - ### Returning User
-- As a returning user, I want mmediate access to the quiz without unnecessary steps.
-- As a returning user, I want to discover and explore additional quiz features or new challenges.
-- As a returning user, I want to participate in time-based challenges to compete with self or others.
+  - As a returning user, I want mmediate access to the quiz without unnecessary steps.
+  - As a returning user, I want to discover and explore additional quiz features or new challenges.
+  - As a returning user, I want to participate in time-based challenges to compete with self or others.
 
 - ### Frequent User
-- As a frequent user, I want to engage in a daily quick quiz challenge for regular mental stimulation.
-- As a frequest user, I want to stay updated with new quiz content or additional features regularly.
-- As a frequent user, I want to set personal records and strive for faster completion times.
+  - As a frequent user, I want to engage in a daily quick quiz challenge for regular mental stimulation.
+  - As a frequest user, I want to stay updated with new quiz content or additional features regularly.
+  - As a frequent user, I want to set personal records and strive for faster completion times.
 
 
 ## Design
+
+### Imagery
+- Used a color scheme that balances professionalism with a touch of vibrancy to maintain a visually inviting atmosphere.
+- Integrate JavaScript-related icons to emphasize the quiz's programming theme.
+- Ensure a clean layout that enhances readability and user focus on quiz content
+
+### Color
+The color design for the JavaScript Online Quiz is carefully chosen to enhance the user experience. A neutral background (#f4f4f4) provides a clean canvas, while the main container and header use a white background (#fff) with vibrant green accents (#4caf50) for clarity and visual appeal. The use of green for buttons and highlights maintains a cohesive theme throughout the quiz, creating a sense of unity and guiding the user's interaction. The color scheme aims to be both aesthetically pleasing and functional, ensuring a seamless and enjoyable experience for participants.
+
+### Fonts
+The chosen font for the JavaScript Online Quiz, 'Open Sans', contributes to a modern and clean visual style. This sans-serif typeface is utilized to provide clear and easily readable text throughout the quiz.
+
+### Layout
+The site is a single page with 3 sections:
+  - Welcome area and guide
+  - Quiz selection area
+  - Quiz complete and score
