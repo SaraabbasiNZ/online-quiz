@@ -120,4 +120,17 @@ Receive immediate feedback on your responses, with incorrect answers visibly hig
 - #### Javascript
   - No errors or warnings were returned when passing through the the [JSHint Validator](https://jshint.com/)
 
-  ![JSHint Validator Results]()
+  ![JSHint Validator Results](assets/images/jshint_validator.png)
+
+  
+### Accessibility 
+
+- The site achieved a Lighthouse accessibility score of 99% and 95% on both mobile and desktop which confirms that the colours and fonts chosen are easy to read and accessible
+
+Mobile Lighthouse Score
+
+![Mobile Lighthouse Score](assets/images/mobile-lighthouse-score.png)
+
+Desktop Lighthouse Score
+
+![Desktop Lighthouse Score](assets/images/desktop-lighthouse-score.png)
