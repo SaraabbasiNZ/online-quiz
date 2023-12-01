@@ -13,3 +13,23 @@ The live link can be found here - [JavaScript Online Quiz](https://saraabbasinz.
 - Introduce an entertaining element with a timer, challenging users to not only answer questions correctly but also do so swiftly, making the learning process more enjoyable.
 - Provide users with immediate feedback on their performance, displaying the time taken and their score. This quick response enhances user engagement and motivates improvement.
 - Whether you're a JavaScript pro or just starting, the goal is to entice you to return, beat your own score, and enjoy the learning process in a lighthearted way.
+
+## User Stories
+
+- ### First Time User
+- As a first-time user, I want to understand the purpose of the website.
+- As a first-time user, I want to easily navigate through the quiz, understand the questions, and submit my answers effortlessly.
+- As a first-time user, once I finish the quiz, I want a summary of my performance and a clear indication that the quiz is complete.
+
+- ### Returning User
+- As a returning user, I want mmediate access to the quiz without unnecessary steps.
+- As a returning user, I want to discover and explore additional quiz features or new challenges.
+- As a returning user, I want to participate in time-based challenges to compete with self or others.
+
+- ### Frequent User
+- As a frequent user, I want to engage in a daily quick quiz challenge for regular mental stimulation.
+- As a frequest user, I want to stay updated with new quiz content or additional features regularly.
+- As a frequent user, I want to set personal records and strive for faster completion times.
+
+
+## Design
