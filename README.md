@@ -184,7 +184,6 @@ There are no known bugs.
 - [Google Fonts](https://fonts.google.com/) - Used to import and alter fonts on the page.
 - [TinyPNG](https://tinypng.com/) - Used to compress images to reduce file size without a reduction in quality.
 - [W3C](https://www.w3.org/) - Used for HTML & CSS Validation.
-- [Coolors](https://coolors.co/) - Used to create colour palette.
 
 ## Deployment
 
@@ -199,3 +198,17 @@ The site was deployed using GitHub pages. The steps to deploy using GitHub pages
 
 The live link can be found here - [JavaScript Online Quiz](https://saraabbasinz.github.io/online-quiz/)
 
+## Credit
+
+This JavaScript Online Quiz project drew inspiration from various sources, contributing to its development and features.
+
+### Resources Used
+
+- [JavaScript questions with Answers](https://www.interviewbit.com/javascript-mcq/#javascript-is-an-_______-language)
+- [Drawing inspiration from a YouTube tutorial](https://code-institute-room.slack.com/archives/D05RK9QGX8E/p1701406390965809)
+
+## Acknowledgments
+
+My mentor Antonio for his support and advice.
+
+The Code Institute slack community for their quick responses and very helpful feedback!
