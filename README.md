@@ -205,7 +205,7 @@ This JavaScript Online Quiz project drew inspiration from various sources, contr
 ### Resources Used
 
 - [JavaScript questions with Answers](https://www.interviewbit.com/javascript-mcq/#javascript-is-an-_______-language)
-- [Drawing inspiration from a YouTube tutorial](https://code-institute-room.slack.com/archives/D05RK9QGX8E/p1701406390965809)
+- [Drawing inspiration from a YouTube tutorial](https://youtube.com/watch?v=pQr4O1OITJo&amp;si=jIKajE-WKlhQmeCn)
 
 ## Acknowledgments
 
