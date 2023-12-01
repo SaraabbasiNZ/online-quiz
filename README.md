@@ -115,7 +115,7 @@ Receive immediate feedback on your responses, with incorrect answers visibly hig
 
 - #### CSS
   - No errors were found when passing through the official W3C CSS Validator
-    - [W3C CSS Validator Results](https://jigsaw.w3.org/css-validator/validator)
+      - [W3C CSS Validator Results](https://jigsaw.w3.org/css-validator/validator)
 
 - #### Javascript
   - No errors or warnings were returned when passing through the the [JSHint Validator](https://jshint.com/)
@@ -124,7 +124,6 @@ Receive immediate feedback on your responses, with incorrect answers visibly hig
 
   
 ### Accessibility 
-
 - The site achieved a Lighthouse accessibility score of 99% and 95% on both mobile and desktop which confirms that the colours and fonts chosen are easy to read and accessible
 
 Mobile Lighthouse Score
@@ -134,3 +133,21 @@ Mobile Lighthouse Score
 Desktop Lighthouse Score
 
 ![Desktop Lighthouse Score](assets/images/desktop-lighthouse-score.png)
+
+### Button Testing
+- All buttons were tested manually to ensure the user is directed to the correct section of the website and functions run as intended.
+
+### Game Testing
+- The game was thoroughly tested by friends and family to ensure that everything worked as intended including the following:
+  - We validate that each quiz question is accurately displayed, users can select only one answer per question, and feedback mechanisms function correctly.
+  - We verify the smooth transition between quiz questions and the effectiveness of the restart button.
+  - The timer is rigorously tested to accurately reflect the time spent on the quiz, ensuring precision and reliability.
+  - We confirm that scores are calculated correctly based on user answers.
+
+### Browser Testing
+- The Website was tested on Google Chrome, Firefox, Microsoft Edge, Safari browsers with no issues noted.
+
+### Device Testing
+- The website was viewed on a variety of devices such as Desktop, Laptop, iPhone 8, iPhoneX and iPad to ensure responsiveness on various screen sizes in both portrait and landscape mode. The website performed as intended. The responsive design was also checked using Chrome developer tools across multiple devices with structural integrity holding for the various sizes.
+- I also used the following website to test responsiveness:
+  - [Responsinator](http://www.responsinator.com/?url=https%3A%2F%2Fsaraabbasinz.github.io%2Fonline-quiz%2F)
