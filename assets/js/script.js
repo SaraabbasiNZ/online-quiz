@@ -112,7 +112,7 @@ function runTimer() {
     timer = setInterval(() => {
         seconds += 1;
         document.getElementById('timer').innerHTML = `${seconds} Seconds`;
-    }, 1000)
+    }, 1000);
 }
 
 // Function to start the quiz
@@ -139,6 +139,7 @@ function restartQuiz() {
     currentQuestion = 0;
     score = 0;
     seconds = 0;
+    buttonsLocked = false;
 
     // Start the quiz again
     startQuiz();
@@ -221,20 +222,6 @@ function showResult() {
 
     // Always show the restart button at the end
     restartBtn.style.display = "block";
-}
-
-// Function to move to the next question
-function nextQuestion() {
-    const resultContainer = document.getElementById("result-container");
-    const restartBtn = document.getElementById("restart-btn");
-
-    if (currentQuestion < questions.length) {
-       showQuestion();
-    } else {
-     showResult();
-    }
-
-    restartBtn.style.display = "none"; // Hide the restart button after moving to the next question
 }
 
 document.getElementById('restart-btn').addEventListener('click', () => {
