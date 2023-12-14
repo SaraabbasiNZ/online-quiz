@@ -168,6 +168,7 @@ function showQuestion() {
         button.textContent = option;
         button.onclick = (event) => checkAnswer(option, event);
         button.classList.remove('red');
+        button.classList.remove('green');
         optionsContainer.appendChild(button);
     });
     // Update page number
@@ -186,6 +187,7 @@ function checkAnswer(selectedOption, event) {
 
     if (selectedOption === currentQ.correctAnswer) {
         score++;
+        event.target.classList.add('green');
     } else {
         event.target.classList.add('red');
     }

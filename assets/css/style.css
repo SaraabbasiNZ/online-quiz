@@ -140,3 +140,7 @@ button:hover {
 .red {
     background-color: red !important;
 }
+
+.green {
+    background-color: darkgreen !important;
+}
