@@ -85,6 +85,11 @@ Wireframes were produced using Balsamiq.
 
 ![Quiz page](assets/images/quiz-page.png)
 
+### Correct Answer
+Receive immediate feedback on your responses, with correct answers visibly highlighted in blue.
+
+![Correct Answer](assets/images/correct-answer.png)
+
 ### Wrong Answer
 Receive immediate feedback on your responses, with incorrect answers visibly highlighted in red.
 
@@ -179,7 +184,6 @@ There are no known bugs.
 - [Responsinator](http://www.responsinator.com/) - Used to verify responsiveness of website on different devices.
 - [Balsamiq](https://balsamiq.com/) - Used to generate Wireframe images.
 - [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - Used for overall development and tweaking, including testing responsiveness and performance.
-- [Font Awesome](https://fontawesome.com/) - Used for icons in information bar.
 - [GitHub](https://github.com/) - Used for version control and hosting.
 - [Google Fonts](https://fonts.google.com/) - Used to import and alter fonts on the page.
 - [TinyPNG](https://tinypng.com/) - Used to compress images to reduce file size without a reduction in quality.
